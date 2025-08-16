@@ -104,10 +104,9 @@
 	</LuaComponent>
 
 	<AudioComponent
-		file="data/audio/Desktop/projectiles.bank"
-		event_root="player_projectiles/kantele/e"
+		file="mods/More_Notes/files/audio/notes/kantele/kantele_more_notes.bank"
+		event_root="kantele_one_lined_octave/kantele_E"
 		set_latest_event_position="1" >
 	</AudioComponent>
 
 </Entity>
-

@@ -1,4 +1,5 @@
 dofile_once("mods/More_Notes/files/ui/components/menus/menus.lua")
+dofile_once("mods/More_Notes/files/ui/components/menus/gui_test.lua")
 
 -- 创建UI基础对象
 local gui = GuiCreate()
@@ -17,5 +18,7 @@ function RenderGUI(player_entity)
 
     GuiGetMenus(gui, screen_w, screen_h, player_entity)
     -- GamePrint("Finish UI rendering")
+
+    -- GuiTest(gui, screen_w, screen_h)
 
 end

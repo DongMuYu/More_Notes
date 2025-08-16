@@ -1,5 +1,8 @@
 ModLuaFileAppend("data/scripts/gun/gun_actions.lua", "mods/More_Notes/files/gun/gun_actions.lua")
+ModRegisterAudioEventMappings("mods/More_Notes/files/audio/notes/kantele/GUIDs.txt")
+
 dofile_once("mods/More_Notes/files/ui/main_ui.lua")
+dofile_once("mods/More_Notes/files/utils/setgun.lua")
 dofile_once("data/scripts/perks/perk.lua")
 
 local player_entity = nil
@@ -12,11 +15,15 @@ function OnPlayerSpawned(entity)
     -- 获取玩家实体的位置
     local x, y = EntityGetTransform( player_entity )
 
-    CreateItemActionEntity("TEST", x, y)
+    -- CreateItemActionEntity("TEST_A", x, y)
 
-    perk_spawn(x, y, "EDIT_WANDS_EVERYWHERE")
+    -- perk_spawn(x, y, "EDIT_WANDS_EVERYWHERE")
 
-    GamePrint("OnPlayerSpawned")
+    -- CreateWand(x, y)
+
+    -- CreateItemActionEntity("OTTAVA_ALTA", x, y)
+
+    -- GamePrint("OnPlayerSpawned")
 end
 
 
@@ -47,6 +54,6 @@ end
 
 function OnWorldInitialized()
 
-    GamePrint("The World Initialized")
+    -- GamePrint("The World Initialized")
 
 end

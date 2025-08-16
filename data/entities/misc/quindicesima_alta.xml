@@ -1,0 +1,23 @@
+<Entity >
+   
+	<LuaComponent
+		script_source_file="mods/More_Notes/files/scripts/octave_dots.lua"
+		execute_every_n_frame="1"
+		remove_after_executed="1"
+		>
+	</LuaComponent>
+	
+	<LuaComponent
+		script_source_file="mods/More_Notes/files/scripts/octave_dots.lua"
+		execute_on_added="1"
+		remove_after_executed="1"
+		>
+	</LuaComponent>
+	
+	<VariableStorageComponent
+		name="octave_dots"
+		value_string="quindicesima_alta"
+		>
+	</VariableStorageComponent>
+  
+</Entity>
